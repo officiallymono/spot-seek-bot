@@ -12,7 +12,7 @@ welcome_message_template = "Hi {username}, welcome to the bot!Please **don't sha
 info_message = '''This Powered by [Python](https://www.python.org/) Telegram Bot is Private and only didicated to My Spotify tracker telegram channel.
 
 **Developer's Contact:**
-[https://t.me/auraatic](https://t.me/auuratic)
+[https://t.me/auraatic](https://t.me/auraatic)
 '''
 
 # errors and wrong link patterns from user
@@ -28,12 +28,6 @@ spotify_artist_link_message = '''You can't send artist links.
 Send the link of your track/album/playlist from spotify'''
 spotify_user_link_message = '''You can't send user links.
 Send the link of your track/album/playlist from spotify'''
-
-# end_message = '''end.
-
-# motivate me to buy more servers for faster download by:
-# • Giving a star in [github](https://github.com/arashnm80/spot-seek-bot)⭐🙂
-# • Or subscribing to [my youtube](https://www.youtube.com/@Arashnm80)🔥❤️'''
 
 end_message = '''end.
 
@@ -71,7 +65,7 @@ spotify_user_link_pattern = r'https?:\/\/open\.spotify\.com\/(intl-[a-zA-Z]{2}\/
 
 # log chanel
 log_bot_url = "https://api.telegram.org/bot" + bot_api + "/"
-log_channel_id = os.environ['-1002405407964']
+log_channel_id = os.environ["LOG_CHANNEL_ID"]
 
 # specify to use warp or not
 warp_mode = True
