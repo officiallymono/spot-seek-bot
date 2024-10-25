@@ -2,6 +2,7 @@
 
 from queue_functions import *
 from my_imports import *
+from variables import welcome_message_template
 
 # initialize and get ready
 bot = telebot.TeleBot(bot_api)
