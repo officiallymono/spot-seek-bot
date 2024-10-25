@@ -5,20 +5,15 @@ bot_name = "PLAGGYt"
 bot_username = "@planetshnaggybot"
 
 # message for /start command
-welcome_message = '''Hi, Welcome.
-Please dont share this Bot with anyone!'''
+welcome_message_template = "Hi {username}, welcome to the bot!Please **don't share this Bot with anyone!**"
+
 
 # message for /info command
-info_message = '''This bot's whole open source is available in my github and all interested programmers are welcome to contribute and improve it.
+info_message = '''This Powered by [Python](https://www.python.org/) Telegram Bot is Private and only didicated to My Spotify tracker telegram channel.
 
-Developer's telegram channel:
-[https://t.me/Arashnm80_Channel](https://t.me/Arashnm80_Channel)
-
-Note: Albums are downloaded faster than playlists and tracks are downloaded faster than albums.
-
-You can support and motivate me to buy more servers for faster download by:
-• Giving a star in [github](https://github.com/arashnm80/spot-seek-bot)⭐🙂
-• Or subscribing to [my youtube](https://www.youtube.com/@Arashnm80)🔥❤️'''
+**Developer's Contact:**
+[https://t.me/auraatic](https://t.me/auuratic)
+'''
 
 # errors and wrong link patterns from user
 deezer_link_message = '''This bot is created to download from spotify but you sent a deezer link.
@@ -42,28 +37,11 @@ Send the link of your track/album/playlist from spotify'''
 
 end_message = '''end.
 
-You can use my *Instagram Downloader* too: @Best\_Instagram\_downloader\_bot
+You can use me anytime latter but quick reminder to not share this robot to anyone else'''
 
-Subscribe to [My YouTube](https://www.youtube.com/@Arashnm80) for more🔥'''
+sth_to_download_message = '''`You already have some link to download, wait for it to finish.`'''
 
-sth_to_download_message = '''You already have some link to download, wait for it to finish.
-
-Sometimes more than 100 users are sending links at the same time so it might take a while for me to download all of them.
-
-But you can motivate me to buy more servers for faster download by:
-• Giving a star in [github](https://github.com/arashnm80/spot-seek-bot)⭐🙂
-• Or subscribing to [my youtube](https://www.youtube.com/@Arashnm80)🔥❤️'''
-
-wrong_link_message = '''This is not a correct spotify link.
-
-You should send a track link like:
-https://open.spotify.com/track/734dz1YaFITwawPpM25fSt
-
-Or an album link like:
-https://open.spotify.com/album/0Lg1uZvI312TPqxNWShFXL
-
-Or a playlist link like:
-https://open.spotify.com/playlist/37i9dQZF1DWX4UlFW6EJPs'''
+wrong_link_message = '''This is not a correct spotify link.'''
 
 # download directory
 directory = "./output/"
@@ -93,14 +71,14 @@ spotify_user_link_pattern = r'https?:\/\/open\.spotify\.com\/(intl-[a-zA-Z]{2}\/
 
 # log chanel
 log_bot_url = "https://api.telegram.org/bot" + bot_api + "/"
-log_channel_id = os.environ['LOG_CHANNEL_ID']
+log_channel_id = os.environ['-1002405407964']
 
 # specify to use warp or not
 warp_mode = True
 
 # promote channel
-promote_channel_username = "@Arashnm80_Channel"
-promote_channel_link = "https://t.me/Arashnm80_Channel"
+promote_channel_username = "@SHLSAL"
+promote_channel_link = "https://t.me/SHLSAL"
 not_subscribed_to_channel_message = '''Your link is correct✅.
 Join to get access to database, then send your link again.'''
 
@@ -123,11 +101,9 @@ datetime_format = "%Y/%m/%d-%H:%M:%S"
 # necessary time in seconds for user to wait between 2 requests
 user_request_wait = 30
 
-unsuccessful_process_message = '''Sorry, my process wasn't sucessful :(
+unsuccessful_process_message = '''Sorry, process wasn't sucessful :(
 
-But you can try another link or use the bot again after some time, it might help.
-
-You can also search for your favorite tracks or artists in my huge [database](https://t.me/+wAztHySpQcdkZjk0)'''
+But you can try another link or use the bot again after some time, it might help.'''
 
 abnormal_behavior_message = " log:\nNo matches found.\
 this line should not happen in normal behavior\
