@@ -58,25 +58,25 @@ def handle_correct_spotify_link(message):
     log(bot_name + " log:\ncorrect link pattern from user: " + str(message.chat.id) + " with contents of:\n" + message.text)
     try:
         # Check the membership status and stop continuing if user is not a member
-        is_member = check_membership(promote_channel_username, message.chat.id)
+        # is_member = check_membership(promote_channel_username, message.chat.id)
 
-        if is_member:
-            log(bot_name + " log:\nuser " + str(message.chat.id) + " is member of channel.")
-        else:
-            log(bot_name + " log:\nuser " + str(message.chat.id) + " is not member of channel.")
-            
-            # Send message with join button to user
-            keyboard = types.InlineKeyboardMarkup()
-            channel_button = types.InlineKeyboardButton(text='Join', url=promote_channel_link)
-            keyboard.add(channel_button)
-            bot.send_message(message.chat.id,
-                            not_subscribed_to_channel_message,
-                            parse_mode="Markdown",
-                            disable_web_page_preview=True,
-                            reply_markup=keyboard)
+# if is_member:
+#     log(bot_name + " log:\nuser " + str(message.chat.id) + " is member of channel.")
+# else:
+#     log(bot_name + " log:\nuser " + str(message.chat.id) + " is not member of channel.")
+    
+#     # Send message with join button to user
+#     keyboard = types.InlineKeyboardMarkup()
+#     channel_button = types.InlineKeyboardButton(text='Join', url=promote_channel_link)
+#     keyboard.add(channel_button)
+#     bot.send_message(message.chat.id,
+#                     not_subscribed_to_channel_message,
+#                     parse_mode="Markdown",
+#                     disable_web_page_preview=True,
+#                     reply_markup=keyboard)
 
-            try_to_delete_message(message.chat.id, guide_message_1.message_id)
-            return
+#     try_to_delete_message(message.chat.id, guide_message_1.message_id)
+#     return
 
         valid_spotify_links_in_user_text = get_valid_spotify_links(message.text)
 
