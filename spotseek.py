@@ -7,10 +7,11 @@ from my_imports import *
 bot = telebot.TeleBot(bot_api)
 
 # defined commands
-@bot.message_handler(commands = ['start'])
+@bot.message_handler(commands=['start'])
 def start_message_handler(message):
-    bot.send_message(message.chat.id, welcome_message, disable_web_page_preview=True)
-    log(bot_name + " log:\n/start command sent from user: " + str(message.chat.id))
+    username = f"@{message.from_user.username}" if message.from_user.username else message.from_user.first_name
+    welcome_message = welcome_message_template.format(username=username)
+    bot.send_message(message.chat.id, welcome_message, parse_mode="Markdown", disable_web_page_preview=True)
 
 @bot.message_handler(commands = ['info'])
 def info_message_handler(message):
