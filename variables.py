@@ -1,28 +1,12 @@
 import os
 
 # bot name
-bot_name = "Spot Seek Bot"
-bot_username = "@SpotSeekBot"
+bot_name = "PLAGGYt"
+bot_username = "@planetshnaggybot"
 
 # message for /start command
-welcome_message = '''Welcome to @SpotSeekBot
-
-Send me a link from spotify and I'll download it for you.
-
-It can be a track link like:
-https://open.spotify.com/track/734dz1YaFITwawPpM25fSt
-
-Or an album link like:
-https://open.spotify.com/album/0Lg1uZvI312TPqxNWShFXL
-
-Or a playlist link like:
-https://open.spotify.com/playlist/37i9dQZF1DWX4UlFW6EJPs
-
-
-NOTE: The fewer tracks your link has, the faster it will download.
-
-
-©️ Creator: @Arashnm80_Channel'''
+welcome_message = '''Hi, Welcome.
+Please dont share this Bot with anyone!'''
 
 # message for /info command
 info_message = '''This bot's whole open source is available in my github and all interested programmers are welcome to contribute and improve it.
